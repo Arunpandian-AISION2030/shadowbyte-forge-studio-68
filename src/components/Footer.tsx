@@ -46,14 +46,14 @@ const Footer = () => {
               Get a professional website and digital marketing support for your business within your budget.
             </p>
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 rounded-lg bg-white border border-gray-300 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-green-50">
-                <Code className="w-5 h-5 text-green-500 transition-transform duration-300 hover:scale-110" />
+              <div className="w-10 h-10 rounded-lg bg-gray-800 border border-gray-700 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-gray-700">
+                <Code className="w-5 h-5 text-green-400 transition-transform duration-300 hover:scale-110" />
               </div>
-              <div className="w-10 h-10 rounded-lg bg-white border border-gray-300 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-green-50">
-                <Palette className="w-5 h-5 text-green-500 transition-transform duration-300 hover:scale-110" />
+              <div className="w-10 h-10 rounded-lg bg-gray-800 border border-gray-700 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-gray-700">
+                <Palette className="w-5 h-5 text-green-400 transition-transform duration-300 hover:scale-110" />
               </div>
-              <div className="w-10 h-10 rounded-lg bg-white border border-gray-300 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-green-50">
-                <Zap className="w-5 h-5 text-green-500 transition-transform duration-300 hover:scale-110" />
+              <div className="w-10 h-10 rounded-lg bg-gray-800 border border-gray-700 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-gray-700">
+                <Zap className="w-5 h-5 text-green-400 transition-transform duration-300 hover:scale-110" />
               </div>
             </div>
           </div>
