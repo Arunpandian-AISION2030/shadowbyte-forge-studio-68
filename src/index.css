@@ -1,0 +1,181 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Clean Vector Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 355 7% 97%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 142 76% 36%;
+    --sidebar-primary-foreground: 355 7% 97%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 142 76% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 50%, #f7fee7 100%);
+  }
+}
+
+@layer components {
+  .vector-grid {
+    background-image: 
+      linear-gradient(rgba(34, 197, 94, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34, 197, 94, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .clean-border {
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    box-shadow: 0 1px 3px rgba(34, 197, 94, 0.1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Enhanced 3D Transitions */
+  .transition-3d {
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+  }
+
+  .hover-3d:hover {
+    transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 20px 40px rgba(34, 197, 94, 0.2);
+  }
+
+  .float-3d {
+    animation: float3d 4s ease-in-out infinite;
+  }
+
+  /* Hide Spline watermark and branding */
+  canvas + div,
+  canvas ~ div,
+  [class*="spline-watermark"],
+  [id*="spline-watermark"],
+  [class*="watermark"],
+  [id*="watermark"],
+  a[href*="spline.design"],
+  a[href*="spline.com"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  /* Spline container styles */
+  .spline-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .spline-container canvas {
+    background: transparent !important;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes float3d {
+    0%, 100% {
+      transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+    33% {
+      transform: translateY(-5px) rotateX(2deg) rotateY(1deg);
+    }
+    66% {
+      transform: translateY(-8px) rotateX(-1deg) rotateY(-2deg);
+    }
+  }
+
+  /* Vector illustration styles */
+  .vector-illustration {
+    filter: drop-shadow(0 4px 6px rgba(34, 197, 94, 0.1));
+  }
+
+  .illustration-element {
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .illustration-element:hover {
+    transform: translateY(-4px) scale(1.02);
+    filter: drop-shadow(0 12px 24px rgba(34, 197, 94, 0.2));
+  }
+
+  /* Spline 3D Scene Styles */
+  .spline-container {
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .spline-container:hover {
+    transform: scale(1.02);
+  }
+}
