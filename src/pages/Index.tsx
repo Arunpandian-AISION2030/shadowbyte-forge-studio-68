@@ -7,11 +7,13 @@ import PortfolioSection from '@/components/PortfolioSection';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
+      <ThemeToggle />
       <HeroSection />
       <ServicesSection />
       <PricingSection />
