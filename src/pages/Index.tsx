@@ -11,15 +11,17 @@ import ThemeToggle from '@/components/ThemeToggle';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navigation />
       <ThemeToggle />
       <HeroSection />
-      <ServicesSection />
-      <PricingSection />
-      <PortfolioSection />
-      <AboutSection />
-      <ContactSection />
+      <div className="space-y-0">
+        <ServicesSection />
+        <PricingSection />
+        <PortfolioSection />
+        <AboutSection />
+        <ContactSection />
+      </div>
       <Footer />
     </div>
   );
