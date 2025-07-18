@@ -26,7 +26,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gray-900 border-t border-gray-700">
+    <footer className="relative bg-gray-50 border-t border-gray-200">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-4 gap-8">
@@ -42,17 +42,17 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent transition-all duration-300 hover:from-green-400 hover:to-emerald-500">ShadowByte.Studio</span>
             </div>
-            <p className="text-gray-300 mb-6 leading-relaxed transition-colors duration-300 hover:text-gray-200">
+            <p className="text-gray-600 mb-6 leading-relaxed transition-colors duration-300 hover:text-gray-700">
               Get a professional website and digital marketing support for your business within your budget.
             </p>
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 rounded-lg bg-gray-800 border border-gray-600 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-gray-700">
+              <div className="w-10 h-10 rounded-lg bg-white border border-gray-300 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-green-50">
                 <Code className="w-5 h-5 text-green-500 transition-transform duration-300 hover:scale-110" />
               </div>
-              <div className="w-10 h-10 rounded-lg bg-gray-800 border border-gray-600 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-gray-700">
+              <div className="w-10 h-10 rounded-lg bg-white border border-gray-300 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-green-50">
                 <Palette className="w-5 h-5 text-green-500 transition-transform duration-300 hover:scale-110" />
               </div>
-              <div className="w-10 h-10 rounded-lg bg-gray-800 border border-gray-600 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-gray-700">
+              <div className="w-10 h-10 rounded-lg bg-white border border-gray-300 flex items-center justify-center hover:border-green-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:bg-green-50">
                 <Zap className="w-5 h-5 text-green-500 transition-transform duration-300 hover:scale-110" />
               </div>
             </div>
@@ -61,13 +61,13 @@ const Footer = () => {
           {/* Links Sections */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-semibold text-white mb-4 transition-colors duration-300 hover:text-green-400">{category}</h4>
+              <h4 className="font-semibold text-gray-800 mb-4 transition-colors duration-300 hover:text-green-600">{category}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
                     <a 
                       href="#" 
-                      className="text-gray-300 hover:text-green-500 transition-all duration-300 hover:translate-x-1 transform inline-block"
+                      className="text-gray-600 hover:text-green-500 transition-all duration-300 hover:translate-x-1 transform inline-block"
                     >
                       {link}
                     </a>
@@ -80,10 +80,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700">
+      <div className="border-t border-gray-200">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-center text-sm text-gray-400">
-            <span className="transition-colors duration-300 hover:text-gray-300">©{currentYear} ShadowByte.Studio | All Rights Reserved</span>
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm text-gray-500">
+            <span className="transition-colors duration-300 hover:text-gray-600">©{currentYear} ShadowByte.Studio | All Rights Reserved</span>
           </div>
         </div>
       </div>
